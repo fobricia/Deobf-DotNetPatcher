@@ -1,0 +1,11 @@
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\bin\Debug\DotNetPatcher.exe.config
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\bin\Debug\DotNetPatcher.exe
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\bin\Debug\DotNetPatcher.pdb
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\bin\Debug\dnlib.dll
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\obj\Debug\DotNetPatcher.Properties.Resources.resources
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\obj\Debug\DotNetPatcher.csproj.GenerateResource.cache
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\obj\Debug\DotNetPatcher.csproj.CoreCompileInputs.cache
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\obj\Debug\DotNetPatcher.csproj.CopyComplete
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\obj\Debug\DotNetPatcher.exe
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\obj\Debug\DotNetPatcher.pdb
+D:\C#\Deobfuscation\DotNetPatcher\DotNetPatcher\obj\Debug\DotNetPatcher.csprojAssemblyReference.cache
