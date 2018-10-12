@@ -15,4 +15,4 @@ an basic deobfuscator for last version (at the moment) dotnetpatcher (v4.5.9.0) 
 * ~ TheProxyRE
 
 # Thanks To:
-* Xenocode for his idea about how to remove anti's
+* Xenocode for his idea about how to remove anti's from his Source (https://github.com/XenocodeRCE/DNPDeobfuscator)
