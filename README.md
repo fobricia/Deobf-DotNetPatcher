@@ -5,6 +5,7 @@ an basic deobfuscator for last version (at the moment) dotnetpatcher (v4.5.9.0) 
 * ~ MathFixer
 * ~ Sizeof Fixer
 * ~ String Decryption
+* ~ Boolean Decryption
 * ~ Integer Decryption
 * ~ Control Flow Deobfuscation
 * ~ Antis (AntiDump, AntiDebug, AntiTamper)
