@@ -1,4 +1,4 @@
-﻿using dnlib.DotNet;
+using dnlib.DotNet;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -44,25 +44,41 @@ namespace DotNetPatcher.DotNetPatcher
                     if (!mDef.HasBody) continue;
                     foreach (iDeobf task in firstPart)
                     {
-                        if (!CheckMarker(task.Version))
+                        try
                         {
-                            new Logger().Error("Can't Deobfuscate (" + task.Name + "), Because the file not protected by DotNetPatcher v4.5.9.0");
-                            continue;
+                            if (!CheckMarker(task.Version))
+                            {
+                                new Logger().Error("Can't Deobfuscate (" + task.Name + "), Because the file not protected by DotNetPatcher v4.5.9.0");
+                                continue;
+                            }
+                            if (!info.ContainsKey(task.Name)) info.Add(task.Name, 0);
+                            info[task.Name] += task.Excute(mDef);
                         }
-                        if (!info.ContainsKey(task.Name)) info.Add(task.Name, 0);
-                        info[task.Name] += task.Excute(mDef);
+                        catch
+                        {
+                            new Logger().Error("An error with " + task.Name + ".");
+                        }
+
                     }
                 }
             }
             foreach (iDeobfL task in secondPart)
             {
-                if (!CheckMarker(task.Version))
+                try
                 {
-                    new Logger().Error("Can't Deobfuscate (" + task.Name + "), Because the file not protected by DotNetPatcher v4.5.9.0");
-                    continue;
+                    if (!CheckMarker(task.Version))
+                    {
+                        new Logger().Error("Can't Deobfuscate (" + task.Name + "), Because the file not protected by DotNetPatcher v4.5.9.0");
+                        continue;
+                    }
+                    if (!info.ContainsKey(task.Name)) info.Add(task.Name, 0);
+                    info[task.Name] += task.Excute(module);
                 }
-                if (!info.ContainsKey(task.Name)) info.Add(task.Name, 0);
-                info[task.Name] += task.Excute(module);
+                catch
+                {
+                    new Logger().Error("An error with " + task.Name + ".");
+                }
+
             }
             foreach (iDeobf task in firstPart)
                 new Logger().Fixed(info[task.Name] + " " + task.Name);
